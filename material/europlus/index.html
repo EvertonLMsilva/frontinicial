@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="<Lamarques Consutoria Integrada>">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Europlus - Sistema de Pagamentos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-euro">
+    <a class="navbar-brand" href="#">
+        <img src="../../app/img/logo.png"> Sistema de pagamentos
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#!/clientes">Clientes</a>-->
+            <!--</li>-->
+            <li class="nav-item active">
+                <a class="nav-link" href="#!/Pedidos">Pedidos</a>
+            </li>
+            <!--<li class="nav-item dropdown">-->
+                <!--<a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown01" data-toggle="dropdown"-->
+                   <!--aria-haspopup="true" aria-expanded="false">Relatórios</a>-->
+                <!--<div class="dropdown-menu" aria-labelledby="dropdown01">-->
+                    <!--<a class="dropdown-item" href="#">Relatorio 1</a>-->
+                    <!--<a class="dropdown-item" href="#">Relatorio 2</a>-->
+                    <!--<a class="dropdown-item" href="#">Relatorio 3</a>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="nav-item dropdown">-->
+                <!--<a class="nav-link dropdown-toggle" href="javascript:;" id="dropdown01" data-toggle="dropdown"-->
+                   <!--aria-haspopup="true" aria-expanded="false">Administração</a>-->
+                <!--<div class="dropdown-menu" aria-labelledby="dropdown01">-->
+                    <!--<a class="dropdown-item" href="#">Action</a>-->
+                    <!--<a class="dropdown-item" href="#">Another action</a>-->
+                    <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <ul>
+
+        </ul>
+    </div>
+</nav>
+
+<main role="main">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+        <li class="breadcrumb-item active">Pedidos</li>
+    </ol>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Últimos Pedidos</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="buscaPedido">
+                            <div class="form-group">
+                                <input type="text" name="search" id="search"
+                                       placeholder="Pesquisa" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Código Reserva</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">CPF/CNPJ</th>
+                        <th scope="col">Ferramentas</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>123456</td>
+                        <td>Nome Cliente</td>
+                        <td>999.999.999-99</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4">
+                <h1>Novo Pedido</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="cadastroPedido">
+                            <div class="form-group">
+                                <input type="hidden" name="idCliete" id="idCliente" value="1">
+                                <input type="text" name="cliente" id="cliente" value="Cliente Padrão"
+                                       class="form-control"
+                                       disabled>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="codigoReserva" id="codigoReserva" value=""
+                                       placeholder="Código Reserva" class="form-control">
+                            </div>
+                            <div class="form-group">
+                            <textarea name="observacoes" id="observacoes" placeholder="Observações"
+                                      class="form-control" rows="10"></textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <button type="submit" class="btn btn-success">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+</main>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/jquery/dist/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.slim.min.js"><\/script>')</script>
+<script src="bower_components/popper.js/dist/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

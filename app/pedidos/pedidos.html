@@ -1,0 +1,80 @@
+<main role="main">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+        <li class="breadcrumb-item active">Pedidos</li>
+    </ol>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Últimos Pedidos</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="buscaPedido">
+                            <div class="form-group">
+                                <input type="text" placeholder="Pesquisa" class="form-control" ng-model="vm.search" ng-keydown="vm.getTabela()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Código Reserva</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">CPF/CNPJ</th>
+                        <th scope="col">Ferramentas</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="dado in vm.dados">
+                        <th scope="row">{{dado.id}}</th>
+                        <td>{{dado.codigoReserva}}</td>
+                        <td>{{dado.cliente}}</td>
+                        <td>{{dado.cpfcnpj}}</td>
+                        <td>
+                            <a href="#"><span class="fa fa-eye"></span></a>
+                            <a href="#"><span class="fa fa-table"></span></a>
+                            <a href="#"><span class="fa fa-times"></span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h1>Novo Pedido</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-success" ng-show="vm.pedidosalvo">
+                            Pedido Salvo com sucesso.
+                        </div>
+                        <form id="cadastroPedido" ng-submit="vm.save()">
+                            <div class="form-group">
+                                <input type="hidden" name="idCliete" id="idCliente" value="1" ng-model="vm.pedido.idcliente">
+                                <input type="text" name="cliente" id="cliente" value="Cliente Padrão"
+                                       class="form-control"
+                                       disabled>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="codigoReserva" id="codigoReserva" value=""
+                                       placeholder="Código Reserva" class="form-control" ng-model="vm.pedido.codigoReserva">
+                            </div>
+                            <div class="form-group">
+                                <div class="alert alert-danger" ng-show="vm.falhaObzervacoes">
+                                    Por Favor Preencha o campo observações
+                                </div>
+                            <textarea name="observacoes" id="observacoes" placeholder="Observações"
+                                      class="form-control" rows="10" ng-model="vm.pedido.observacoes"></textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <button type="submit" class="btn btn-success">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+
+</main>

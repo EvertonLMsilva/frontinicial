@@ -1,0 +1,20 @@
+{
+  "name": "Europlus",
+  "description": "Sistema de pagamento Europlus",
+  "version": "0.0.1",
+  "homepage": "lamarques.com.br",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "font-awesome": "^5.0.6",
+    "bootstrap": "^4.0.0",
+    "angular": "^1.6.9",
+    "angular-route": "*",
+    "angular-loader": "*",
+    "angular-mocks": "*",
+    "html5-boilerplate": "*",
+    "popper.js": "^1.12.9",
+    "angular-jquery": "^0.2.1"
+  }
+}
