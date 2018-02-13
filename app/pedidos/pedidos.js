@@ -9,7 +9,7 @@ angular.module('europlusApp.pedidos', ['ngRoute'])
         });
     }])
 
-    .controller('PedidosCtrl', ['$scope', '$http', function ($scope, $http) {
+    .controller('PedidosCtrl', ['$scope', '$http','ngDialog', function ($scope, $http, ngDialog) {
         var vm = $scope.vm = this;
 
         vm.dados = [];
@@ -43,9 +43,25 @@ angular.module('europlusApp.pedidos', ['ngRoute'])
                         alert('Falha ao salvar pedido');
                     });
         }
+        vm.pedidoVisualizar = function (ind) {
+            ngDialog.open({
+                template: 'pedidos/pedidos-visualizar.html',
+                controller: 'PedidosVisulizarCtrl',
+                data: vm.dados[ind]
+            });
+        }
 
         vm.getTabela();
+    }])
+
+    .controller('PedidosVisulizarCtrl', ['$scope','ngDialog', function ($scope, ngDialog) {
+        var vm = $scope.vm = this;
+        vm.dado = $scope.ngDialogData;
+        vm.close = function () {
+            ngDialog.close(this);
+        }
     }]);
+
 
 
 

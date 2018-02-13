@@ -15,6 +15,7 @@
     "angular-mocks": "*",
     "html5-boilerplate": "*",
     "popper.js": "^1.12.9",
-    "angular-jquery": "^0.2.1"
+    "angular-jquery": "^0.2.1",
+    "ng-dialog": "^1.4.0"
   }
 }

@@ -1,3 +1,11 @@
 .bg-euro {
     background-color: #e3f2fd;
 }
+
+.ngdialog.ngdialog-theme-default .ngdialog-content{
+    font-family: sans-serif !important;
+    font-size: 1em !important;
+    line-height: normal !important;
+    max-width: 100% !important;
+    width: 80% !important;
+}

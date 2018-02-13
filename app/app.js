@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('europlusApp', [
-  'ngRoute',
-  "europlusApp.pedidos"
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+    'ngRoute',
+    'ngDialog',
+    "europlusApp.pedidos"
+]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/pedidos'});
+    $routeProvider.otherwise({redirectTo: '/pedidos'});
 }]);

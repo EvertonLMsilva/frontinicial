@@ -1,0 +1,26 @@
+<h3>Pedido nº {{vm.dado.codigoPedido}}</h3>
+<div class="row">
+    <div class="col-md-3">
+        <h5>Código Pedido</h5>
+        {{vm.dado.codigoPedido}}
+    </div>
+    <div class="col-md-3">
+        <h5>Código Reserva</h5>
+        {{vm.dado.codigoReserva}}
+    </div>
+    <div class="col-md-3">
+        <h5>Data Pedido</h5>
+        {{vm.dado.dataPedido}}
+    </div>
+    <div class="col-md-3">
+        <h5>Pagamentos</h5>
+        <a href="javascript:;"><span class="fa fa-table"></span></a>
+    </div>
+    <div class="col-md-12">
+        <h5>Detalhes do Pedido</h5>
+        {{vm.dado.observacao}}
+    </div>
+    <div class="col-md-12 text-right">
+        <button ng-click="vm.close()">Fechar</button>
+    </div>
+</div>
